@@ -1,6 +1,6 @@
 {
     "project": {
-        "projectSettingsVersion": "2.0.0",
+        "projectSettingsVersion": "3.0.0",
         "creationData": {
             "type": "App Designer",
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
@@ -69,55 +69,32 @@
             }
         ],
         "buildConfigurations": {
-            "Android-Crosswalk": {
+            "Android": {
                 "platform_": "android",
                 "runtime_": "Crosswalk with Cordova 3.x",
                 "name_": "Android-Crosswalk",
                 "preferences_": {
                     "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
+                    "android-targetSdkVersion": "23",
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
                 "appName_": "blank-cordova-ad",
                 "appID_": "xdk.intel.blank.ad.template.crosswalk",
                 "appAccess_": {
-                    "mode": "legacy",
+                    "mode": "whitelist",
                     "network": [
                         "*"
                     ],
-                    "intents": [],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appVersion_": "0.0.1",
-                "appAuthor_": "Intel XDK",
-                "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
-                "appVersionCode_": "1"
-            },
-            "Android": {
-                "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
-                "preferences_": {
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto"
-                },
-                "isActive_": true,
-                "appName_": "blank-cordova-ad",
-                "appID_": "xdk.intel.blank.ad.template",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "*"
+                    "intents": [
+                        "http://*/*",
+                        "https://*/*",
+                        "tel:*",
+                        "sms:*",
+                        "mailto:*",
+                        "geo:*",
+                        "market:*"
                     ],
-                    "intents": [],
                     "navigation": []
                 },
                 "icons_": [],
@@ -136,7 +113,7 @@
                 "runtime_": "Cordova 3.x",
                 "name_": "iOS",
                 "preferences_": {
-                    "ios-target": "6",
+                    "ios-target": "8.0",
                     "ios-configuration": "adhoc"
                 },
                 "isActive_": true,
@@ -147,7 +124,16 @@
                     "network": [
                         "*"
                     ],
-                    "intents": [],
+                    "intents": [
+                        "http://*/*",
+                        "https://*/*",
+                        "tel:*",
+                        "sms:*",
+                        "mailto:*",
+                        "geo:*",
+                        "itms:*",
+                        "itms-apps:*"
+                    ],
                     "navigation": []
                 },
                 "icons_": [],
