@@ -18,7 +18,7 @@
         "serviceMethods": [],
         "cordovaPluginsDirectory": "plugins",
         "cordovaPlugins": [
-              {
+            {
                 "id": "cordova-plugin-statusbar",
                 "name": "StatusBar",
                 "version": "?",
@@ -34,7 +34,7 @@
                 "description": "Cordova StatusBar Plugin",
                 "data": {},
                 "dependedBy": []
-             },
+            },
             {
                 "id": "cordova-plugin-device",
                 "version": "?",
@@ -75,7 +75,7 @@
                 "name_": "Android",
                 "preferences_": {
                     "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "23",
+                    "android-targetSdkVersion": "21",
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
